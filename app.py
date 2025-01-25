@@ -2,7 +2,7 @@ from flask import Flask
 import os
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('hii')
 def hello_geek():
     return '<h1>Hello from Flask & Docker</h1>'
 @app.route('/hi')
