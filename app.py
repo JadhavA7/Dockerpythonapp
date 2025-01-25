@@ -2,9 +2,9 @@ from flask import Flask
 import os
 app = Flask(__name__)
 
-@app.route('Python App Hosting')
+@app.route('/')
 def hello_geek():
-    return '<h1>Hello from Flask & Docker</h1>'
+    return 'Python App Hosting'
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
